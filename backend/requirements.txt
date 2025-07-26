@@ -14,3 +14,4 @@ nltk
 python-dotenv
 selenium
 webdriver_manager
+lxml_html_clean
