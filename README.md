@@ -5,7 +5,7 @@ This is a full-stack web application that detects fake news from either a URL or
 ## 🛠 Tech Stack
 - **Frontend:** React (Vite)
 - **Backend:** FastAPI (Python)
-- **Model:** Trained ML model using Tfidf + RandomForest
+- **Model:** Trained ML model using Tfidf + LogisticRegression (CV for testing)
 - **Deployment:** Vercel (frontend), Render (backend)
 
 ## 🧪 Features
