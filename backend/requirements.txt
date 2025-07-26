@@ -4,3 +4,11 @@ joblib
 scikit-learn
 newspaper3k
 nltk
+fastapi
+uvicorn
+python-multipart
+pydantic
+beautifulsoup4
+requests
+nltk
+python-dotenv
