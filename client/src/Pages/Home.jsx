@@ -1,20 +1,16 @@
 import {React, useState} from 'react'
 import FNDCard from '../Components/FNDCard'
 import ResultCard from '../Components/ResultCard';
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
+import InfoCards from '../Components/InfoCards';
 
 function Home() {
     const [result, setResult] = useState(null);
     
     return (
         <>
-            <Header/>
-            <main>
-                <FNDCard setResult={setResult}/>
-                <ResultCard result={result}/>
-            </main>
-            <Footer/>
+            <FNDCard setResult={setResult}/>
+            <ResultCard result={result}/>
+            <InfoCards/>
         </>
     )
 }

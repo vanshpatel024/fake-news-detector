@@ -73,6 +73,7 @@
     .result-card {
         margin: 12px;
         padding: 16px;
+        margin-bottom: 64px;
     }
     
     .result-card h2 {

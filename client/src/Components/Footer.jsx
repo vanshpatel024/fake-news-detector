@@ -13,10 +13,10 @@ function Footer() {
                 <span className="footer-link">Contact</span>
             </div>
             <div className="footer-right">
-                <a href="#" aria-label="LinkedIn (placeholder)">
+                <a href="https://www.linkedin.com/in/vansh-patel-6b94462b0/" aria-label="LinkedIn (placeholder)">
                     <i className="fab fa-linkedin"></i>
                 </a>
-                <a href="#" aria-label="GitHub (placeholder)">
+                <a href="https://github.com/vanshpatel024/fake-news-detector" aria-label="GitHub (placeholder)">
                     <i className="fab fa-github"></i>
                 </a>
             </div>

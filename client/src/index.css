@@ -88,3 +88,20 @@ textarea {
     scrollbar-width: thin;
     scrollbar-color: var(--color-divider) transparent;
 }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem; /* optional spacing */
+}

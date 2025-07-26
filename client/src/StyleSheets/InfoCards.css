@@ -1,0 +1,43 @@
+.info-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 64px auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+.info-card {
+    width: 300px;
+    background-color: var(--color-bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: var(--color-text-primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+    z-index: 10;
+    /* ensures it's not clipped */
+}
+
+.info-card h3 {
+    color: var(--color-button-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-card i {
+    font-size: 1.1rem;
+    color: var(--color-button-primary);
+}

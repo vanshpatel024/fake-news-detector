@@ -1,18 +1,24 @@
-import { useState } from 'react'
-import Home from './Pages/Home'
-import './index.css'
-import './StyleSheets/App.css'
-import Notification from './Components/Notification'
+import Home from './Pages/Home';
+import Notification from './Components/Notification';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+
+import './index.css';
+import './StyleSheets/App.css';
 
 function App() {
   return (
     <>
       <Notification />
       <div className="app-container">
-        <Home />
+        <Header />
+        <main className="main-content">
+          <Home />
+        </main>
+        <Footer />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

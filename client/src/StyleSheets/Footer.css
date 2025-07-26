@@ -2,11 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-bg-footer);
+    background-color: var(--color-bg-card);
     color: var(--color-text-muted);
-    padding: 1.2rem 2rem;
+    padding: 1rem 2rem;
     font-size: 0.9rem;
-    box-shadow: inset 0 1px 0 var(--color-divider);
     flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
@@ -42,7 +41,7 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 0.6rem;
+    gap: 1rem;
 }
 
 .footer-right a {
