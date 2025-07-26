@@ -1,0 +1,6 @@
+Flask
+Flask-CORS
+joblib
+scikit-learn
+newspaper3k
+nltk

@@ -1,0 +1,108 @@
+.result-card {
+  background-color: var(--color-bg-card);
+  color: var(--color-text-primary);
+  padding: 24px;
+  margin: 32px auto;
+  margin-bottom: 64px;
+  max-width: 800px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--color-divider);
+  box-sizing: border-box;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.result-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: var(--color-text-secondary);
+}
+
+.result-card h3,
+.result-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: var(--color-text-primary);
+}
+
+.result-card .article-content {
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.result-card .prediction-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    color: var(--color-text-primary);
+    background-color: var(--color-tag-fake);
+    /* default fallback */
+}
+
+.result-card .prediction-tag.fake {
+    background-color: var(--color-tag-fake);
+}
+
+.result-card .prediction-tag.real {
+    background-color: var(--color-tag-real);
+}
+
+.result-card .confidence-bar {
+    margin-top: 8px;
+    height: 10px;
+    background-color: var(--color-bg-tab);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.result-card .confidence-fill {
+    height: 100%;
+    background-color: var(--color-button-primary);
+    transition: width 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .result-card {
+        margin: 12px;
+        padding: 16px;
+    }
+    
+    .result-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .result-card h3,
+    .result-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .result-card .prediction-tag {
+        font-size: 0.85rem;
+        padding: 5px 12px;
+    }
+}
+
+/* Animation */
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-card-animate {
+    animation: slideFadeIn 0.6s ease forwards;
+}

@@ -1,0 +1,90 @@
+:root {
+    /* Background Colors */
+    --color-bg-primary: #121212;
+    --color-bg-card: #1E1E1E;
+    --color-bg-footer: #111827;
+    --color-bg-table: #1F2937;
+    --color-bg-tab: #2A2A2A;
+    --color-bg-input: #121212;
+
+    /* Text Colors */
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #E5E7EB;
+    --color-text-muted: #D1D5DB;
+    --color-text-link: #199AC9;
+    /* darkened from #22D3EE */
+    --color-text-placeholder: #9CA3AF;
+
+    /* Stroke / Borders */
+    --color-border: #CE4D4A;
+
+    /* Button */
+    --color-button-primary: #199AC9;
+    /* new primary: darker but still vibrant blue */
+    --color-button-primary-hover: #117CA3;
+    /* hover: darker variant for contrast and comfort */
+
+    /* Result Tags */
+    --color-tag-fake: #EF4444;
+    --color-tag-real: #10B981;
+
+    /* Table Border / Divider */
+    --color-divider: #374151;
+
+    /* Icon Fill */
+    --color-icon-muted: #ADAEBC;
+
+    /* Misc */
+    --color-accent: #C84A47;
+    /* optional: slight darkening for harmony with updated button */
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    scrollbar-gutter: stable;
+}
+
+* {
+    caret-color: transparent;
+}
+
+input,
+textarea {
+    caret-color: auto;
+    cursor: text;
+}
+
+/* Makes scrollbar area invisible */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: none; /* fully removes background */
+}
+
+/* Makes track area fully invisible */
+::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 10px;
+}
+
+/* Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-divider);
+    border-radius: 10px;
+    border: 2px solid var(--color-bg-card);
+    transition: background-color 0.3s ease;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-button-primary-hover);
+}
+
+/* For Firefox support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-divider) transparent;
+}
