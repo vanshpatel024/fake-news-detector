@@ -1,17 +1,22 @@
 .result-card {
-  background-color: var(--color-bg-card);
-  color: var(--color-text-primary);
-  padding: 24px;
-  margin: 32px auto;
-  margin-bottom: 64px;
-  max-width: 800px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--color-divider);
-  box-sizing: border-box;
-  overflow-x: hidden;
-  word-wrap: break-word;
-  word-break: break-word;
+    background-color: var(--color-bg-card);
+    color: var(--color-text-primary);
+    padding: 24px;
+    margin: 32px auto;
+    margin-bottom: 64px;
+    max-width: 800px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 0.13rem solid transparent;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+    transition: border 0.6s ease;
+}
+
+.result-card:hover {
+    border: 0.13rem solid var(--color-button-primary);
 }
 
 .result-card h2 {
@@ -75,7 +80,7 @@
         padding: 16px;
         margin-bottom: 64px;
     }
-    
+
     .result-card h2 {
         font-size: 1.3rem;
     }
