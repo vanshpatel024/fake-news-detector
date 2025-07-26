@@ -13,3 +13,4 @@ requests
 nltk
 python-dotenv
 selenium
+webdriver_manager
