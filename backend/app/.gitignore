@@ -1,9 +1,5 @@
-__pycache__/
-*.pyc
-env/
-venv/
-.idea/
-*.pkl
+test_model_big.pkl
+test_model_small.pkl
 
 .env
 .env.*
