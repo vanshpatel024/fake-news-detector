@@ -1,5 +1,3 @@
-// client/src/API.js
-
 const isLocalhost = window.location.hostname === "localhost";
 
 const API_BASE_URL = isLocalhost

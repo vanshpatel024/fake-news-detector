@@ -48,7 +48,6 @@
     margin-bottom: 12px;
     color: var(--color-text-primary);
     background-color: var(--color-tag-fake);
-    /* default fallback */
 }
 
 .result-card .prediction-tag.fake {

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../StyleSheets/Header.css';
-import IconImage from '../Assets/Icons/Icon.png'; // ← Import PNG image
+import IconImage from '../Assets/Icons/Icon.png';
 
 function Header() {
     return (

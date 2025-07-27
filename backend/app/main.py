@@ -17,7 +17,7 @@ origins = [
     if origin.strip()
 ]
 
-print("✅ CORS_ORIGINS loaded:", origins)
+print("CORS_ORIGINS loaded:", origins)
 
 app.add_middleware(
     CORSMiddleware,

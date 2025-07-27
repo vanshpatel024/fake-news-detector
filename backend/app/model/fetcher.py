@@ -11,5 +11,5 @@ def fetch_article_content(url):
 
         return title, content if content else None
     except Exception as e:
-        print("❌ Error extracting article:", e)
+        print("Error extracting article:", e)
         return None, None

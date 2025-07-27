@@ -10,7 +10,7 @@ function Notification() {
     const [fadeInStart, setFadeInStart] = useState(false);
     const queueRef = useRef([]);
     const processingRef = useRef(false);
-    const currentMessageRef = useRef(""); // To track what's currently on screen
+    const currentMessageRef = useRef(""); // To track the current msg
 
     const processQueue = () => {
         if (processingRef.current || queueRef.current.length === 0) return;
@@ -44,7 +44,7 @@ function Notification() {
         enqueueNotification = (msg) => {
             if (!msg) return;
 
-            // Prevent duplicates in both queue and current message
+            // not showing duplicate mssgs in a row
             if (queueRef.current.includes(msg) || currentMessageRef.current === msg) return;
 
             queueRef.current.push(msg);

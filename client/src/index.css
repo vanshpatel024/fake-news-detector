@@ -12,7 +12,6 @@
     --color-text-secondary: #E5E7EB;
     --color-text-muted: #D1D5DB;
     --color-text-link: #199AC9;
-    /* darkened from #22D3EE */
     --color-text-placeholder: #9CA3AF;
 
     /* Stroke / Borders */
@@ -20,9 +19,7 @@
 
     /* Button */
     --color-button-primary: #199AC9;
-    /* new primary: darker but still vibrant blue */
     --color-button-primary-hover: #117CA3;
-    /* hover: darker variant for contrast and comfort */
 
     /* Result Tags */
     --color-tag-fake: #EF4444;
@@ -36,7 +33,6 @@
 
     /* Misc */
     --color-accent: #C84A47;
-    /* optional: slight darkening for harmony with updated button */
 }
 
 body {
@@ -57,7 +53,6 @@ textarea {
     cursor: text;
 }
 
-/* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
@@ -72,9 +67,8 @@ textarea {
     background: transparent;
 }
 
-/* Firefox */
 * {
-    scrollbar-width: none; /* fully hides scrollbar */
+    scrollbar-width: none;
     scrollbar-color: transparent transparent;
 }
 
@@ -92,5 +86,5 @@ html, body, #root {
 
 .main-content {
   flex: 1;
-  padding: 1rem; /* optional spacing */
+  padding: 1rem;
 }
